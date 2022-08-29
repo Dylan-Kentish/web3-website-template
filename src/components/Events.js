@@ -1,5 +1,5 @@
 export default class Events {
-    constructor(){
+    constructor() {
         this.events = {};
     }
 
@@ -21,7 +21,7 @@ export default class Events {
 
     publish(eventName, data) {
         if (this.events[eventName]) {
-            this.events[eventName].forEach(function(fn) {
+            this.events[eventName].forEach(function (fn) {
                 fn(data);
             });
         }
