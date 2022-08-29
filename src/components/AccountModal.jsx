@@ -18,7 +18,8 @@ export const AccountModal = ({ setShowModal, data }) => {
   }
 
   const round = (number, decimalPlaces) => {
-    return Math.round(number * 10 ** decimalPlaces) * 10 ** -decimalPlaces;
+    let ratio = 10 ** decimalPlaces;
+    return Math.round(number * ratio) / ratio;
   }
 
   const closeModal = async (e) => {

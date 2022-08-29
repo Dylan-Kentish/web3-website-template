@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { React } from "react";
 import { Data } from "./components/Data";
 import { HeaderBar } from "./components/HeaderBar";
 import './assets/App.css'
