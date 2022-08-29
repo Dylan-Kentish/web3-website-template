@@ -11,6 +11,7 @@ export class Data {
   };
 
   constructor(ethereum) {
+    // add more support, consider web3modal?
     if (!ethereum) {
       throw "ethereum is null - connect metamask wallet.";
     }
