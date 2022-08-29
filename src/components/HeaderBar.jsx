@@ -45,10 +45,10 @@ export function HeaderBar({ data }) {
 
   return (
     <div key="topbar" className="flex w-full place-content-center bg-gray-100 shadow-lg">
-      <div key="navbar" className="flex grow max-w-7xl">
+      <div key="navbar" className="flex grow max-w-7xl m-2">
         <div key="logo" className="flex grow place-content-start">
-          <img src={react} className="w-auto h-16 " />
-          <img src={vite} className="w-auto h-16 " />
+          <img src={react} className="w-auto h-16" />
+          <img src={vite} className="w-auto h-16" />
         </div>
         <div key="account" className="flex">
           {account === null && (
